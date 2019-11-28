@@ -1,5 +1,4 @@
 # Arch Linux+Windows 10雙系統安裝筆記
-###### tags: `linux`, `note`
 
 ## TOC
 
@@ -230,7 +229,7 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 - tree
 - pandoc
     > Convert doc format
-- [bat](https://github.com/sharkdp/bat#syntax-highlighting) - A cat clone
+- [bat](https://github.com/sharkdp/bat#syntax-highlighting) ─ A cat clone
 - rsync, rclone
 - python
     - python-setuptools
@@ -238,6 +237,10 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 - discord
 - (telegram-desktop)
 - ([peek](https://www.archlinux.org/packages/community/x86_64/peek/))  ─ A simple screen recorder
+- [fd](https://github.com/sharkdp/fd) ─ A simple, fast and user-friendly alternative to 'find'
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
+    - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
 
 ### 軟體安裝 from AUR
 
@@ -257,6 +260,7 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 - [jetbrains-toolbox](https://aur.archlinux.org/packages/jetbrains-toolbox/)
     - Pycharm
     - IntelliJ IDEA
+    - WebStorm
     - etc.
 
 ##### Reference 
@@ -428,3 +432,5 @@ Formatting failed:
 A：`＄ sudo ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.5`
 
 [Ref.1] [error while loading shared libraries: libtinfo.so.5](https://github.com/commercialhaskell/stack/issues/1012#issuecomment-387054798)
+
+###### tags: `linux`, `note`
