@@ -1,7 +1,4 @@
 # ArchLinux 重灌記錄
-###### tags: `linux`, `note`
-
-> 完成後搬去 github
 
 ## Boot
 
@@ -241,3 +238,6 @@ Disable Nvidia GPU
 - [Arch Linux 安裝教學](https://blog.allenchou.cc/arch-linux-tutorial/)
 - [geniustanley/arch-linux-install](https://github.com/geniustanley/arch-linux-install)
 - [Install Arch Linux on XPS 13 9370](https://gist.github.com/android10/3b36eb4bbb7e990a414ec4126e7f6b3f)
+- [Arch Linux 安裝筆記 - HackMD](https://hackmd.io/@arthurc0102/HkWytqPLH)
+
+###### tags: `linux`, `note`
