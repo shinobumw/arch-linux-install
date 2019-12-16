@@ -1,8 +1,3 @@
----
-title: Arch Linux + Windows 10 雙系統安裝筆記
-tags: linux, note
----
-
 # Arch Linux + Windows 10 雙系統安裝筆記
 
 ## TOC
@@ -246,6 +241,7 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
     - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
+- vim or neovim
 
 ### 軟體安裝 from AUR
 
@@ -437,3 +433,5 @@ Formatting failed:
 A：`＄ sudo ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.5`
 
 [Ref.1] [error while loading shared libraries: libtinfo.so.5](https://github.com/commercialhaskell/stack/issues/1012#issuecomment-387054798)
+
+###### tags: `linux`, `note`
