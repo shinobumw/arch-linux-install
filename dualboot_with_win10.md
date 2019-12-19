@@ -125,12 +125,41 @@ EndSection
 
 ### 輸入法配置
 
-`$ sudo pacman -S fcitx-im kcm-fcitx fcitx-rime fcitx-table-extra fcitx-mozc`
+`$ sudo pacman -S fcitx-im kcm-fcitx fcitx-rime fcitx-mozc`
 
 - `kcm-fcitx`: KDE 專用，GTK 則是裝 `fcitx-configtool`
 - `fcitx-rime`: 拼音
-- `fcitx-table-extra`: 嘸蝦米 
 - `fcitx-mozc`: 日文
+- ~~`fcitx-table-extra`: 嘸蝦米~~
+- 改用神人修改過的 [rime-liur](https://github.com/hsuanyi-chou/rime-liur)
+
+:::info
+**安裝方法**：
+1. 下載 https://github.com/hsuanyi-chou/rime-liur
+2. 將`default.custom.yaml`和`liur*.yaml`放到`rime`資料夾底下
+3. 重新 deploy rime
+
+**新增功能**：
+:::spoiler 
+1. **注音模式：** 以「`';`」鍵引導可進行注音輸入(但無法透過數字鍵選字)
+2. **拼音模式：** 以「\`」鍵(上排數字鍵 1 左邊)引導可進行拼音輸入
+3. **讀音反查：** 以「`;;`」鍵引導並輸入無蝦米碼，可反查該字讀音，如「龘」=`ㄉㄚˊ`
+4. **日文漢字/罕用字輸入功能**
+    1. 字典檔包含日文漢字如「辻」「雫」「渋」等…。不需要的人，可至`liur.extended`中，把`- liur_Japan`這行註解掉
+    2. 可透過`ctrl + /`切換至擴充字集，輸入罕用字，如四個金(AAAA)等字
+5. **複合型查碼：**
+    1. 於造詞、拼音、注音模式下鍵入`ctrl + '`(Enter鍵左邊)，可直接查詢蝦米編碼，
+    2. 於注音或拼音模式下，可以進行以詞查碼
+        (例：於注音模式下輸入ㄍㄢㄍㄚ或拼音模式下輸入ganga，再切換查碼就可以
+        找出「尷尬」這個詞的所有蝦米編碼，減少選字)
+        於造詞模式下，則可以反查出該字及其候選字的所有編碼(例：輸miep，可以查
+        出微、徵、徽、徾、鰴、徴)等字的蝦米編碼
+6. **簡繁轉換：** 於任何模式下透過`ctrl + .`，可進行即時簡繁轉換，無須切換模式
+7. **中英混輸：** 在不切換輸入法的情形下，可以空白鍵上中文字或中文符號；Enter 鍵上英文字或英文符號
+8. **shift切換中英輸入：** shift 切換中英輸入，caps lock 變為大寫
+:::
+
+
 
 如果在 firefox 中無法打中文，請在 `~/.xprofile` 中加入:
 ```bash
@@ -198,9 +227,10 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 
 #### Font
 
-- noto-fonts, noto-fonts-cjk, noto-fonts-emoji
+- noto-fonts noto-fonts-cjk noto-fonts-emoji
     > **Note**: Remember to set chrome/firefox's fonts to CJK.
-- adobe-source-han-sans-tw-fonts, adobe-source-code-pro-fonts
+- adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
+- adobe-source-code-pro-fonts
 - ttf-ubuntu-font-family
 
 #### Others
