@@ -89,6 +89,7 @@ menuentry "System restart" {
 
 #### 法一
 
+:::spoiler  略
 可通过修改 synaptics 的配置文件，修改触摸板配置。包括多指敲击、滚动、避免手掌触摸、精确度与快速滚动。
 
 `cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf`
@@ -118,7 +119,8 @@ Section "InputClass"
         Option "PalmMinWidth" "3"          #认定为手掌的最小宽度
         Option "PalmMinZ" "200"            #认定为手掌的最小压力值
 EndSection
-```
+:::
+
 #### 法二 (快速)
 
 直接到 System Settings 的 Touchpad 去設定。
@@ -239,7 +241,7 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 
 - tlp ─ 省電用
 - openssh
-- smplayer, smplayer-themes
+- smplayer smplayer-themes
     - youtube-dl, smtube
 - latte-dock
 - ~~plasma5-applets-active-window-control~~
@@ -272,6 +274,7 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 - [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
     - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
 - vim or neovim
+- [thefuck](https://github.com/nvbn/thefuck)
 
 ### 軟體安裝 from AUR
 
