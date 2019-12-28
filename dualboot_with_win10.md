@@ -24,6 +24,8 @@
 
 ## 安裝過程
 
+[ArchLinux 重灌記錄](https://hackmd.io/rfZJPmMyRPudCVXRLtFpFQ)
+
 ### Partition
 
 - /swap - 512MB(8GB以上可不用割)
@@ -320,6 +322,10 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 
 - [**Outline VPN**](https://getoutline.org/en/home)
 
+### Downgrading packages
+
+[Downgrading packages #Arch Linux Archive - ArchWiki](https://wiki.archlinux.org/index.php/Downgrading_packages#Arch_Linux_Archive)
+
 ## Command
 
 ### pacman / yay 常用指令
@@ -440,15 +446,15 @@ A：出現此訊息就表示在官方的 repo 和 AUR 中都找不到這個 pack
 
 ---
 
-Q：為什麼在 plasma(KDE) 上用 firefox 瀏覽大部份網站時的英文字型都顯示等寬字型？\
+Q：為什麼在 plasma(KDE) 上用 firefox 瀏覽大部份網站時的英文字型都顯示等寬字型？  
 A：`$ sudo pacman -S ttf-dejavu ttf-liberation `
 
-[Ref.1] [[SOLVED] How to fix the terrible font in firefox in KDE?](https://bbs.archlinux.org/viewtopic.php?id=231893)\
+[Ref.1] [[SOLVED] How to fix the terrible font in firefox in KDE?](https://bbs.archlinux.org/viewtopic.php?id=231893)  
 [Ref.2] https://wiki.archlinux.org/index.php/KDE#Fonts
 
 ---
 
-Q：How to solve “error: failed to commit transaction (conflicting files)”？
+Q：How to solve “error: failed to commit transaction (conflicting files)”？  
 A：`$ sudo pacman -Syu --overwrite [filepath]`
 
 [Ref.1] [How To Solve “error: failed to commit transaction (conflicting files)” In Arch Linux](https://www.ostechnix.com/how-to-solve-error-failed-to-commit-transaction-conflicting-files-in-arch-linux/)
