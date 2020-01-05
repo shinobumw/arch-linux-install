@@ -277,6 +277,10 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
     - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
 - vim or neovim
 - [thefuck](https://github.com/nvbn/thefuck)
+- [zstd](https://github.com/facebook/zstd) ─ Zstandard, Fast real-time compression algorithm
+    - Compresssion: `tar -acf archive.tar.zst dest/`
+    - Decompression: `tar -axf archive.tar.whatever`
+    - [Reference](https://news.ycombinator.com/item?id=21958585)
 
 ### 軟體安裝 from AUR
 
