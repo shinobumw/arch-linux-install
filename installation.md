@@ -225,7 +225,126 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 
 ## 其他雜七雜八軟體安裝
 
-懶得寫= =
+### 桌面設定
+
+ - [Wallpaper](https://yande.re/post/show?md5=4f42ad6493368a89010ebdcccb708ed5) 很惠<3
+ - Dock at bottom: Latte Dock
+ - Panel at top: Latte Dock
+ - Plasmoids in the panel: 
+     - Application Launcher (menu icon)
+     - ~~Active  Window Control(icon+title+application menu)~~
+     - Window Title Applet
+     - Window AppMenu Applet
+     - Event Calendar
+        - Setting: `'<font color="#feeff9">'dddd, MMMM d'</font>' '<font color="#f7d19b">'h:mm'</font>'`
+     - Pager
+     - (Color Picker)
+     - System Tray
+     - ~~Active Window Control(buttons)~~
+     - Window Buttons Applet
+ - ~~Kwin Script for tiling: Quarter Tiling or Tilting(downloadable from Kwin Scripts settings)~~ -> Encounter some bugs.
+
+### Themes
+
+- [arc-theme](https://github.com/horst3180/arc-theme)
+- [adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme)
+- [materia-theme](https://github.com/nana-4/materia-theme)
+- [Flat-Plat-Blue Theme](https://github.com/peterychuang/Flat-Plat-Blue)
+    > Forked from Materia Theme (formerly Flat-Plat)
+- [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
+- [paper-icon-theme](https://aur.archlinux.org/packages/paper-icon-theme/)
+
+- [**arc-kde**](https://github.com/PapirusDevelopmentTeam/arc-kde)
+    > [目前使用](https://www.archlinux.org/packages/community/any/arc-kde/)
+- [adapta-kde](https://github.com/PapirusDevelopmentTeam/adapta-kde)
+- [monochrome-kde](https://gitlab.com/pwyde/monochrome-kde)
+    > Only for sddm theme
+
+- [**papirus-icon-theme**](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
+    > 目前使用
+
+### Via pacman
+
+#### Font
+
+- noto-fonts noto-fonts-cjk noto-fonts-emoji
+    > **Note**: Remember to set chrome/firefox's fonts to CJK.
+- adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
+- adobe-source-code-pro-fonts
+- ttf-ubuntu-font-family
+
+#### Others
+
+- firefox-developer-edition
+
+- tlp ─ 省電用
+- openssh
+- smplayer smplayer-themes
+    - youtube-dl smtube
+- latte-dock
+- ~~plasma5-applets-active-window-control~~
+- neofetch
+- networkmanager-openvpn
+    > 連 VPN 才需要裝
+- tmux
+- [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [tldr](https://tldr.sh/)
+    - [tldr++](https://aur.archlinux.org/packages/tldr%2B%2B/) (go ver. w/ user interaction)
+- (qmmp)
+- (termite)
+- [code](https://www.archlinux.org/packages/community/x86_64/code/)
+- htop
+- clang, (astyle)
+- tree
+- pandoc
+    > Convert doc format
+- [bat](https://github.com/sharkdp/bat#syntax-highlighting) ─ A cat clone
+- rsync rclone
+- python
+    - python-setuptools
+    - python-pip
+- discord
+- (telegram-desktop)
+- ([peek](https://www.archlinux.org/packages/community/x86_64/peek/))  ─ A simple screen recorder
+- [fd](https://github.com/sharkdp/fd) ─ A simple, fast and user-friendly alternative to 'find'
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
+    - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
+- vim neovim
+- [thefuck](https://github.com/nvbn/thefuck)
+- [zstd](https://github.com/facebook/zstd) ─ Zstandard, Fast real-time compression algorithm
+    - Compresssion: `tar -acf archive.tar.zst src/`
+    - Decompression: `tar -axf archive.tar.whatever`
+    - [[Reference](https://news.ycombinator.com/item?id=21958585)]
+
+### Via AUR
+
+- ~~pacaur (unmaintained)~~
+- [yay](https://github.com/Jguer/yay) (Yet another Yogurt)  ─ An AUR Helper written in Go
+- ~~sublime-text-dev~~
+- visual-studio-code-bin
+    > **Note**: `code-git` in AUR and `code` in arch official repos are compiled version from github, and this is the microsoft official binary version.
+- google-chrome
+- downgrade
+- [spotify](https://aur.archlinux.org/packages/spotify/)
+- ([gotop](https://aur.archlinux.org/packages/gotop/))
+- latte-dock related:
+    - plasma5-applets-window-title
+    - plasma5-applets-window-appmenu
+    - plasma5-applets-window-buttons
+- [plasma5-applets-eventcalendar](https://aur.archlinux.org/packages/plasma5-applets-eventcalendar/)
+- [jetbrains-toolbox](https://aur.archlinux.org/packages/jetbrains-toolbox/)
+    - Pycharm
+    - IntelliJ IDEA
+    - WebStorm
+    - etc.
+
+##### Reference 
+
+- [Awesome Command-Line Tools](https://www.vimfromscratch.com/articles/awesome-command-line-tools/)
+- [awesome-shell](https://github.com/alebcay/awesome-shell)
+- [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)
+- [What’s your favorite CLI tool nobody knows about? - /r/linux](https://www.reddit.com/r/linux/comments/b5n1l5/whats_your_favorite_cli_tool_nobody_knows_about/)
 
 ## 沒有去設定的
 
