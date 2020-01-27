@@ -78,6 +78,8 @@ $ mount /dev/sda2 /efi
 - packages for accessing documentation in man and info pages: `man-db`, `man-pages` and `texinfo`.
 
 This is what's in the group but not "in the package":
+<details><summary>Details</summary>
+
 ```
 $ for pkg in $(comm -23 <(pacman -Sqg base|sort|uniq) <(expac -S %D base | tr " " "\n"|sort|uniq)); do echo $pkg":" $(expac -S %d $pkg); done
 cryptsetup: Userspace setup tool for transparent encryption of block devices using dm-crypt
@@ -104,6 +106,7 @@ usbutils: USB Device Utilities
 vi: The original ex/vi text editor
 xfsprogs: XFS filesystem utilities
 ```
+</details>
 
 ##### Reference:
 
@@ -272,6 +275,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 - adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
 - adobe-source-code-pro-fonts
 - ttf-ubuntu-font-family
+- otf-fira-code
 
 #### Others
 
@@ -313,8 +317,8 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 - vim neovim
 - [thefuck](https://github.com/nvbn/thefuck)
 - [zstd](https://github.com/facebook/zstd) ─ Zstandard, Fast real-time compression algorithm
-    - Compresssion: `tar -acf archive.tar.zst src/`
-    - Decompression: `tar -axf archive.tar.whatever`
+    - Compresssion: `tar -acf target.tar.zst file1 file2`
+    - Decompression: `tar -axf source.tar.zst`
     - [[Reference](https://news.ycombinator.com/item?id=21958585)]
 
 ### Via AUR
