@@ -28,7 +28,7 @@ tags: linux, note
 
 - `/swap`: sda5 (512M)
 - `/root`: sda6 (99.5G)
-- `/boot`: 雙系統的話用原本 windows 的 partition，建議大小 260–512 MiB
+- `/boot`: 雙系統的話用原本 windows 的 partition，建議大小 260~512 MiB
 
 Formatting
 ```
@@ -47,13 +47,15 @@ $ mount /dev/sda6 /mnt
 ~~$ mkdir /mnt/boot/efi~~
 ~~$ mount /dev/sda2 /boot/efi~~
 
-# New Mount point
+# New Mount point [1]
 $ mkdir /mnt/boot
 $ mount /dev/sda2 /boot
 or
 $ mkdir /mnt/efi
 $ mount /dev/sda2 /efi
 ```
+
+[1] [Partitioning - ArchWiki](https://wiki.archlinux.org/index.php/Partitioning#/boot)
 
 ## Mirror List
 
@@ -65,8 +67,8 @@ $ mount /dev/sda2 /efi
 
 `$ pacstrap /mnt  base base-devel`
 
-:::warning
-**Note:** The `base` group has been replaced by a metapackage of the same name in order to minimize the installation size.
+:::warning  
+**Note:** The `base` group has been replaced by a metapackage of the same name in order to minimize the installation size. [1][2]  
 :::
 
 需要額外安裝的:
@@ -108,7 +110,7 @@ xfsprogs: XFS filesystem utilities
 ```
 </details>
 
-##### Reference:
+#### Reference:
 
 [1] [`base` group replaced by mandatory `base` package - manual intervention required](https://www.archlinux.org/news/base-group-replaced-by-mandatory-base-package-manual-intervention-required/)\
 [2] [Arch Linux - News: `base` group replaced by mandatory `base` package - /r/archlinux](https://www.reddit.com/r/archlinux/comments/de1er6/arch_linux_news_base_group_replaced_by_mandatory/)
@@ -201,18 +203,22 @@ $ passwd username
 $ pacman -S sudo
 $ visudo
 ```
-找到`# %wheel ALL=(ALL)ALL`，把#字號拿掉。
+找到`# %wheel ALL=(ALL)ALL`，把 # 字號拿掉。
 
 `$ reboot`
 
 ## GUI
 
 ```
-$ pacman -S xorg
+$ pacman -S xorg [1]
+# xf86-video-intel 不一定要安裝 [2]
 $ pacman -S xf86-video-intel
-# KDE 全家桶，也可以選擇需要的安裝就好，e.g., konsole, dolpin, kate, okular, etc.
+# 可選需要的安裝就好，例：konsole, dolpin, kate, okular, etc.
 $ pacman -S plasma kde-applications sddm
 ```
+[1] [
+Xorg - ArchWiki](https://wiki.archlinux.org/index.php/Xorg#Driver_installation)  
+[2] [Intel graphics - ArchWiki](https://wiki.archlinux.org/index.php/Intel_graphics#Installation)
 
 ## 設置開機啟動服務
 
@@ -224,7 +230,7 @@ $ systemctl enable NetworkManager (注意大小寫)
 
 ## NTFS 檔案系統讀寫支援
 
-Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬碟、其他硬碟是 NTFS 檔案系統的話，想要寫入就必須安裝 `ntfs-3g` Package。
+Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 NTFS 檔案系統的話，就必須安裝 `ntfs-3g` Package。
 
 ## 其他雜七雜八軟體安裝
 
@@ -307,7 +313,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 - python
     - python-setuptools
     - python-pip
-- discord
+- (discord)
 - (telegram-desktop)
 - ([peek](https://www.archlinux.org/packages/community/x86_64/peek/))  ─ A simple screen recorder
 - [fd](https://github.com/sharkdp/fd) ─ A simple, fast and user-friendly alternative to 'find'
@@ -315,11 +321,11 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 - [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
     - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
 - vim neovim
-- [thefuck](https://github.com/nvbn/thefuck)
+- ([thefuck](https://github.com/nvbn/thefuck))
 - [zstd](https://github.com/facebook/zstd) ─ Zstandard, Fast real-time compression algorithm
     - Compresssion: `tar -acf target.tar.zst file1 file2`
     - Decompression: `tar -axf source.tar.zst`
-    - [[Reference](https://news.ycombinator.com/item?id=21958585)]
+    - [[Reference]](https://news.ycombinator.com/item?id=21958585)
 
 ### Via AUR
 
@@ -343,7 +349,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
     - WebStorm
     - etc.
 
-##### Reference 
+#### Reference 
 
 - [Awesome Command-Line Tools](https://www.vimfromscratch.com/articles/awesome-command-line-tools/)
 - [awesome-shell](https://github.com/alebcay/awesome-shell)
@@ -352,14 +358,14 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果額外的資料硬�
 
 ## 沒有去設定的
 
-Disable Nvidia GPU
+- Disable Nvidia GPU
 
-## Reference
+## References
 
 - [**Installation guide - ArchWiki**](https://wiki.archlinux.org/index.php/Installation_guide)
 - [以官方Wiki的方式安装ArchLinux](https://www.viseator.com/2017/05/17/arch_install/)
 - [ArchLinux安装后的必须配置与图形界面安装教程](https://www.viseator.com/2017/05/19/arch_setup/)
-- [Arch Linux 安装指南[2018.03.01]](https://bbs.archlinuxcn.org/viewtopic.php?id=1037)
+- [Arch Linux 安装指南[2019.12.01] / Arch Linux 中文论坛](https://bbs.archlinuxcn.org/viewtopic.php?id=1037)
 - [Arch Linux：安裝筆記](https://blog.rex-tsou.com/2017/12/arch-linux%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98/)
 - [Arch Linux 安裝筆記](https://leomao.github.io/2017/09/archlinux-install-note/)
 - [给 GNU/Linux 萌新的 Arch Linux 安装指南](https://blog.yoitsu.moe/arch-linux/installing_arch_linux_for_complete_newbies.html)
