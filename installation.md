@@ -262,13 +262,11 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
     > Forked from Materia Theme (formerly Flat-Plat)
 - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
 - [paper-icon-theme](https://aur.archlinux.org/packages/paper-icon-theme/)
-
 - [**arc-kde**](https://github.com/PapirusDevelopmentTeam/arc-kde)
     > [目前使用](https://www.archlinux.org/packages/community/any/arc-kde/)
 - [adapta-kde](https://github.com/PapirusDevelopmentTeam/adapta-kde)
 - [monochrome-kde](https://gitlab.com/pwyde/monochrome-kde)
     > Only for sddm theme
-
 - [**papirus-icon-theme**](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
     > 目前使用
 
@@ -286,7 +284,6 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 #### Others
 
 - firefox-developer-edition
-
 - tlp ─ 省電用
 - openssh
 - smplayer smplayer-themes
@@ -326,6 +323,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
     - Compresssion: `tar -acf target.tar.zst file1 file2`
     - Decompression: `tar -axf source.tar.zst`
     - [[Reference]](https://news.ycombinator.com/item?id=21958585)
+- docker
 
 ### Via AUR
 
@@ -347,6 +345,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
     - Pycharm
     - IntelliJ IDEA
     - WebStorm
+    - Rider
     - etc.
 
 #### Reference 
@@ -354,7 +353,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - [Awesome Command-Line Tools](https://www.vimfromscratch.com/articles/awesome-command-line-tools/)
 - [awesome-shell](https://github.com/alebcay/awesome-shell)
 - [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)
-- [What’s your favorite CLI tool nobody knows about? - /r/linux](https://www.reddit.com/r/linux/comments/b5n1l5/whats_your_favorite_cli_tool_nobody_knows_about/)
+- [What’s your favorite CLI tool nobody knows about? - r/linux](https://www.reddit.com/r/linux/comments/b5n1l5/)
 
 ## 沒有去設定的
 
