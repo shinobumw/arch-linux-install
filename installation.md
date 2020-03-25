@@ -1,5 +1,6 @@
 ---
 title: ArchLinux 重灌記錄
+description:
 tags: linux, note
 ---
 
@@ -80,8 +81,8 @@ $ mount /dev/sda2 /efi
 - packages for accessing documentation in man and info pages: `man-db`, `man-pages` and `texinfo`.
 
 This is what's in the group but not "in the package":
-<details><summary>Details</summary>
 
+<details><summary>Details</summary>
 ```
 $ for pkg in $(comm -23 <(pacman -Sqg base|sort|uniq) <(expac -S %D base | tr " " "\n"|sort|uniq)); do echo $pkg":" $(expac -S %d $pkg); done
 cryptsetup: Userspace setup tool for transparent encryption of block devices using dm-crypt
