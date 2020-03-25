@@ -1,3 +1,9 @@
+---
+title: Arch Linux + Windows 10 雙系統安裝筆記
+description:
+tags: linux, note
+---
+
 # Arch Linux + Windows 10 雙系統安裝筆記
 
 ## TOC
@@ -143,12 +149,12 @@ EndSection
 
 :::info
 **安裝方法**：
-1. 下載 https://github.com/hsuanyi-chou/rime-liur
+1. 下載 [https://github.com/shinobumw/rime-liur](https://github.com/shinobumw/rime-liur)
 2. 將`default.custom.yaml`和`liur*.yaml`放到`rime`資料夾底下
 3. 重新 deploy rime
 
 **新增功能**：
-:::spoiler 
+:::spoiler
 1. **注音模式：** 以「`';`」鍵引導可進行注音輸入(但無法透過數字鍵選字)
 2. **拼音模式：** 以「\`」鍵(上排數字鍵 1 左邊)引導可進行拼音輸入
 3. **讀音反查：** 以「`;;`」鍵引導並輸入無蝦米碼，可反查該字讀音，如「龘」=`ㄉㄚˊ`
@@ -352,4 +358,3 @@ A：`＄ sudo ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.5`
 
 [Ref.1] [error while loading shared libraries: libtinfo.so.5](https://github.com/commercialhaskell/stack/issues/1012#issuecomment-387054798)
 
-###### tags: `linux`, `note`
