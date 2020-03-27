@@ -358,3 +358,22 @@ A：`＄ sudo ln -sf /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.5`
 
 [Ref.1] [error while loading shared libraries: libtinfo.so.5](https://github.com/commercialhaskell/stack/issues/1012#issuecomment-387054798)
 
+---
+
+Q：Matplotlib 的 plt.show() 無法顯示出圖片？
+
+I am trying to plot a simple graph using pyplot, e.g.:
+```python=
+import matplotlib.pyplot as plt
+plt.plot([1,2,3],[5,7,4])
+plt.show()
+```
+
+but the figure does not appear and I get the following message:
+```!
+UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+```
+
+A：`$ sudo pacman -S tk`
+
+[Ref.] [“UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.” when plotting figure with pyplot on Pycharm](https://stackoverflow.com/q/56656777) 
