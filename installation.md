@@ -6,6 +6,8 @@ tags: linux, note
 
 # ArchLinux 重灌記錄
 
+[TOC]
+
 ## Boot
 
 - UEFI with GPT
@@ -311,6 +313,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - python
     - python-setuptools
     - python-pip
+    - tk (when using Matplotlib)
 - (discord)
 - (telegram-desktop)
 - ([peek](https://www.archlinux.org/packages/community/x86_64/peek/))  ─ A simple screen recorder
