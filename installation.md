@@ -179,6 +179,25 @@ $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 有可能第一次會偵測不到 Windows，重開機後再用一次就 OK。
 
+### Multiple kernels
+
+例：原本已安裝 `linux`，想再安裝 `linux-lts` [1]
+
+```bash
+$ pacman -S linux-lts
+# Regenerate grub config
+$ grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+```bash
+$ vim /etc/default/grub
+
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+```
+
+[1] https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks#Multiple_entries
+
 ## 安裝連網路的工具
 
 `$ pacman -S networkmanager`
