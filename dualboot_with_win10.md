@@ -18,12 +18,12 @@ tags: linux, note
     - 512GB SSD
     - Windows 10 Home 64bits
 - DE: KDE Plasma
-    > WM: i3-gaps 等有空再來研究
+  > WM: i3-gaps 等有空再來研究
 
 ## 事前準備
 
 - 在電源計劃設定關閉快速啟動
-    > windows 每次大更新後都會預設勾選，要記得關掉
+  > windows 每次大更新後都會預設勾選，要記得關掉
 - 進 BIOS 關閉 secure boot, fast boot
 - 壓縮硬碟空間 (100GB)
 - 用 [rufus](http://rufus.akeo.ie/?locale) 製作開機USB
@@ -203,9 +203,10 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
   3. Copy .ovpn file to your computer.
 
 - [angristan/openvpn-install](https://github.com/angristan/openvpn-install)
-  >Another script for archlinux and other distros
-
+  > Another script for archlinux and other distros
 - [**Outline VPN**](https://getoutline.org/en/home)
+- WireGuard
+  > linux 5.6 之後已內建，不用另外安裝。
 
 ### Downgrading packages
 
