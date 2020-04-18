@@ -15,7 +15,7 @@ tags: linux, note
 
 ## 製作開機USB
 
-- rufus 
+- rufus
 - ISO 不行就改用 DD
 
 ## 連網路
@@ -262,17 +262,17 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
  - Dock at bottom: Latte Dock
  - Panel at top: Latte Dock
  - Plasmoids in the panel: 
-     - Application Launcher (menu icon)
-     - ~~Active  Window Control(icon+title+application menu)~~
-     - Window Title Applet
-     - Window AppMenu Applet
-     - Event Calendar
-        - Setting: `'<font color="#feeff9">'dddd, MMMM d'</font>' '<font color="#f7d19b">'h:mm'</font>'`
-     - Pager
-     - (Color Picker)
-     - System Tray
-     - ~~Active Window Control(buttons)~~
-     - Window Buttons Applet
+   - Application Launcher (menu icon)
+   - ~~Active  Window Control(icon+title+application menu)~~
+   - Window Title Applet
+   - Window AppMenu Applet
+   - Event Calendar
+     - Setting: `'<font color="#feeff9">'dddd, MMMM d'</font>' '<font color="#f7d19b">'h:mm'</font>'`
+   - Pager
+   - (Color Picker)
+   - System Tray
+   - ~~Active Window Control(buttons)~~
+   - Window Buttons Applet
  - ~~Kwin Script for tiling: Quarter Tiling or Tilting(downloadable from Kwin Scripts settings)~~ -> Encounter some bugs.
 
 ### Themes
@@ -281,23 +281,23 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - [adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme)
 - [materia-theme](https://github.com/nana-4/materia-theme)
 - [Flat-Plat-Blue Theme](https://github.com/peterychuang/Flat-Plat-Blue)
-    > Forked from Materia Theme (formerly Flat-Plat)
+  > Forked from Materia Theme (formerly Flat-Plat)
 - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
 - [paper-icon-theme](https://aur.archlinux.org/packages/paper-icon-theme/)
 - [**arc-kde**](https://github.com/PapirusDevelopmentTeam/arc-kde)
-    > [目前使用](https://www.archlinux.org/packages/community/any/arc-kde/)
+  > [目前使用](https://www.archlinux.org/packages/community/any/arc-kde/)
 - [adapta-kde](https://github.com/PapirusDevelopmentTeam/adapta-kde)
 - [monochrome-kde](https://gitlab.com/pwyde/monochrome-kde)
-    > Only for sddm theme
+  > Only for sddm theme
 - [**papirus-icon-theme**](https://www.archlinux.org/packages/community/any/papirus-icon-theme/)
-    > 目前使用
+  > 目前使用
 
 ### Via pacman
 
 #### Font
 
 - noto-fonts noto-fonts-cjk noto-fonts-emoji
-    > **Note**: Remember to set chrome/firefox's fonts to CJK.
+  > **Note**: Remember to set chrome/firefox's fonts to CJK.
 - adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts
 - adobe-source-code-pro-fonts
 - ttf-ubuntu-font-family
@@ -309,16 +309,17 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - tlp ─ 省電用
 - openssh
 - smplayer smplayer-themes
-    - youtube-dl smtube
+  - youtube-dl smtube
 - latte-dock
 - ~~plasma5-applets-active-window-control~~
 - neofetch
 - networkmanager-openvpn
-    > 連 VPN 才需要裝
+  > 連 VPN 才需要裝
+  > 現在 linux 5.6 以上已內建 wireguard 了。
 - tmux
 - [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [tldr](https://tldr.sh/)
-    - [tldr++](https://aur.archlinux.org/packages/tldr%2B%2B/) (go ver. w/ user interaction)
+  - [tldr++](https://aur.archlinux.org/packages/tldr%2B%2B/) (go ver. w/ user interaction)
 - (qmmp)
 - (termite)
 - [code](https://www.archlinux.org/packages/community/x86_64/code/)
@@ -326,26 +327,26 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - clang, (astyle)
 - tree
 - pandoc
-    > Convert doc format
+  > Convert doc format
 - [bat](https://github.com/sharkdp/bat#syntax-highlighting) ─ A cat clone
 - rsync rclone
 - python
-    - python-setuptools
-    - python-pip
-    - tk (when using Matplotlib)
+  - python-setuptools
+  - python-pip
+  - tk (when using Matplotlib)
 - (discord)
 - (telegram-desktop)
 - ([peek](https://www.archlinux.org/packages/community/x86_64/peek/))  ─ A simple screen recorder
 - [fd](https://github.com/sharkdp/fd) ─ A simple, fast and user-friendly alternative to 'find'
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Glances](https://github.com/nicolargo/glances) ─ CLI curses-based monitoring tool
-    - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
+  - [Glances 命令列系統監控工具](https://blog.gtwang.org/linux/glances-cli-curses-based-monitoring-tool/)
 - vim neovim
 - ([thefuck](https://github.com/nvbn/thefuck))
 - [zstd](https://github.com/facebook/zstd) ─ Zstandard, Fast real-time compression algorithm
-    - Compresssion: `tar -acf target.tar.zst file1 file2`
-    - Decompression: `tar -axf source.tar.zst`
-    - [[Reference]](https://news.ycombinator.com/item?id=21958585)
+  - Compresssion: `tar -acf target.tar.zst file1 file2`
+  - Decompression: `tar -axf source.tar.zst`
+  - [[Reference]](https://news.ycombinator.com/item?id=21958585)
 - docker
 
 ### Via AUR
@@ -354,22 +355,22 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - [yay](https://github.com/Jguer/yay) (Yet another Yogurt)  ─ An AUR Helper written in Go
 - ~~sublime-text-dev~~
 - visual-studio-code-bin
-    > **Note**: `code-git` in AUR and `code` in arch official repos are compiled version from github, and this is the microsoft official binary version.
+  > **Note**: `code-git` in AUR and `code` in arch official repos are compiled version from github, and this is the microsoft official binary version.
 - google-chrome
 - downgrade
 - [spotify](https://aur.archlinux.org/packages/spotify/)
 - ([gotop](https://aur.archlinux.org/packages/gotop/))
 - latte-dock related:
-    - plasma5-applets-window-title
-    - plasma5-applets-window-appmenu
-    - plasma5-applets-window-buttons
+  - plasma5-applets-window-title
+  - plasma5-applets-window-appmenu
+  - plasma5-applets-window-buttons
 - [plasma5-applets-eventcalendar](https://aur.archlinux.org/packages/plasma5-applets-eventcalendar/)
 - [jetbrains-toolbox](https://aur.archlinux.org/packages/jetbrains-toolbox/)
-    - Pycharm
-    - IntelliJ IDEA
-    - WebStorm
-    - Rider
-    - etc.
+  - Pycharm
+  - IntelliJ IDEA
+  - WebStorm
+  - Rider
+  - etc.
 
 #### Reference 
 
