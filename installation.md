@@ -323,7 +323,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - (qmmp)
 - (termite)
 - [code](https://www.archlinux.org/packages/community/x86_64/code/)
-- htop
+- htop, [bashtop](https://github.com/aristocratos/bashtop)
 - clang, (astyle)
 - tree
 - pandoc
