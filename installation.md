@@ -368,8 +368,6 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - [jetbrains-toolbox](https://aur.archlinux.org/packages/jetbrains-toolbox/)
   - Pycharm
   - IntelliJ IDEA
-  - WebStorm
-  - Rider
   - etc.
 
 #### Reference 
