@@ -277,7 +277,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 
 ### Themes
 
-- [arc-theme](https://github.com/horst3180/arc-theme)
+- [arc-gtk-theme](https://www.archlinux.org/packages/community/any/arc-gtk-theme/)
 - [adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme)
 - [materia-theme](https://github.com/nana-4/materia-theme)
 - [Flat-Plat-Blue Theme](https://github.com/peterychuang/Flat-Plat-Blue)
@@ -285,7 +285,7 @@ Linux kernel 不支援對 NTFS 檔案系統的讀取，如果像外接硬碟是 
 - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
 - [paper-icon-theme](https://aur.archlinux.org/packages/paper-icon-theme/)
 - [**arc-kde**](https://github.com/PapirusDevelopmentTeam/arc-kde)
-  > [目前使用](https://www.archlinux.org/packages/community/any/arc-kde/)
+  > [目前使用](https://aur.archlinux.org/pkgbase/arc-kde/)
 - [adapta-kde](https://github.com/PapirusDevelopmentTeam/adapta-kde)
 - [monochrome-kde](https://gitlab.com/pwyde/monochrome-kde)
   > Only for sddm theme
