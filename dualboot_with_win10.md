@@ -197,16 +197,16 @@ chown \[用戶名\]:\[用戶名\] /home/\[用戶名\]/.xprofile
 
 - [Nyr/openvpn-install](https://github.com/Nyr/openvpn-install)
   > **Note**: Only work on Ubuntu, Debian, and CentOS
-
   1. `$ wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh`
   2. Follow the instructions indicated.
   3. Copy .ovpn file to your computer.
-
 - [angristan/openvpn-install](https://github.com/angristan/openvpn-install)
   > Another script for archlinux and other distros
 - [**Outline VPN**](https://getoutline.org/en/home)
 - WireGuard
-  > linux 5.6 之後已內建，不用另外安裝。
+  - linux 5.6 之後已內建，不用另外安裝。
+  - [WireGuard - ArchWiki](https://wiki.archlinux.org/index.php/WireGuard)
+  - [Ubuntu 20.04 set up WireGuard VPN server](https://www.cyberciti.biz/faq/ubuntu-20-04-set-up-wireguard-vpn-server/)
 
 ### Downgrading packages
 
