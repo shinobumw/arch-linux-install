@@ -303,22 +303,22 @@ A: 去設定中刪掉後再重連即可。
 Q: Windows10 大更新後開機沒出現 grub 選單，反而進入 grub rescue？
 
 A: [[Reference1](http://jeffyon.blogspot.tw/2016/08/windows-10-ubuntu-grub-rescue.html?m=1)], [[Reference2](http://roachsinai.github.io/2016/10/14/1arch_install/)]
-- 查看有哪些硬碟分區
-`# ls` 
-- 慢慢找哪個是開機碟（原本是gpt6，windows更新後新增了一個修復碟）
-`# ls (hd0,gpt7)/boot` 
-- 查看
-`# set` 
-- 更改（通常是最後一個）
-`# set prefix=(hd0,gpt7)/boot/grub`
-`# set root=hd0,gpt7`
-- 返回normal mode就能看到熟悉的grub選單
-`# insmod normal`  
-`# normal`
-- 進系統後重新安裝grub
-`# sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck`
-- 生成配置文件
-`# sudo grub-mkconfig -o /boot/grub/grub.cfg`
+- 查看有哪些硬碟分區  
+  `# ls` 
+- 慢慢找哪個是開機碟（原本是gpt6，windows更新後新增了一個修復碟）  
+  `# ls (hd0,gpt7)/boot` 
+- 查看  
+  `# set` 
+- 更改（通常是最後一個）  
+  `# set prefix=(hd0,gpt7)/boot/grub`  
+  `# set root=hd0,gpt7`
+- 返回normal mode就能看到熟悉的grub選單  
+  `# insmod normal`  
+  `# normal`
+- 進系統後重新安裝grub  
+  `# sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck`
+- 生成配置文件  
+  `# sudo grub-mkconfig -o /boot/grub/grub.cfg`
 - 重開機，大功告成！
 
 ---
