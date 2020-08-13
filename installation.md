@@ -6,6 +6,9 @@ tags: linux, note
 
 # ArchLinux 重灌記錄
 
+[![hackmd-github-sync-badge](https://hackmd.io/rfZJPmMyRPudCVXRLtFpFQ/badge)](https://hackmd.io/rfZJPmMyRPudCVXRLtFpFQ)
+
+
 [TOC]
 
 ## Boot
