@@ -6,6 +6,9 @@ tags: linux, note
 
 # Arch Linux + Windows 10 雙系統安裝筆記
 
+[![hackmd-github-sync-badge](https://hackmd.io/q-k5PFgqS9m_cDsCLYjplw/badge)](https://hackmd.io/q-k5PFgqS9m_cDsCLYjplw)
+
+
 ## TOC
 
 [TOC]
